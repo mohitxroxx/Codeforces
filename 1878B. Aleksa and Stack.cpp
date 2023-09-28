@@ -10,6 +10,7 @@
     ios_base::sync_with_stdio(0); \
     cin.tie(0);                   \
     cout.tie(0);
+#define vector vector<int>
 #define fv for (int i = 0; i < v.size(); i++)
 #define yes cout<<"YES"<<endl
 #define no cout<<"NO"<<endl
@@ -18,18 +19,7 @@ using namespace std;
  
 void prg()
 {
-    int n;
-    cin>>n;
-    vector<int> it;
-    int res=1;
-    fi0{
-        it.push_back(res);
-        res+=2;
-    }
-    fi0{
-        cout<<it[i]<<" ";
-    }
-    cout<<endl;
+nn
 }
 signed main()
 {

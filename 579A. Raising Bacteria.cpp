@@ -19,19 +19,18 @@ using namespace std;
  
 void prg()
 {
-    int m,n;
-    cin>>n>>m;
-    int x=1,res=0;
-    for(int i=0;i<m;i++){
-        int y;
-        cin>>y;
-        if(y>=x)
-        res+=y-x;
-        else
-        res+=n-(x-y);
-        x=y;
-    }
-    cout<<res<<endl;
+    int n;
+    cin>>n;
+    // int res=0;
+    // while(n!=0){
+    //     int d=n%2;
+    //just finding the extra bacterias added that arent doubled up
+    //     if(d==1)
+    //     res++;
+    //     n/=2;
+    // }
+    // cout<<res<<endl;
+    cout<<__builtin_popcount(n)<<endl;
 }
 signed main()
 {

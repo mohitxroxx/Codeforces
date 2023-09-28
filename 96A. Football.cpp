@@ -19,19 +19,12 @@ using namespace std;
  
 void prg()
 {
-    int m,n;
-    cin>>n>>m;
-    int x=1,res=0;
-    for(int i=0;i<m;i++){
-        int y;
-        cin>>y;
-        if(y>=x)
-        res+=y-x;
-        else
-        res+=n-(x-y);
-        x=y;
-    }
-    cout<<res<<endl;
+    string s;
+    cin>>s;
+    if(s.find("0000000")!=-1||s.find("1111111")!=-1)
+    yes;
+    else
+    no;
 }
 signed main()
 {

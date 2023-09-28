@@ -19,19 +19,20 @@ using namespace std;
  
 void prg()
 {
-    int m,n;
-    cin>>n>>m;
-    int x=1,res=0;
-    for(int i=0;i<m;i++){
-        int y;
-        cin>>y;
-        if(y>=x)
-        res+=y-x;
+    string s;
+    cin>>s;
+    int l=0,u=0;
+    for(char ch:s){
+        if((int)ch>=65&&(int)ch<=90)
+        u++;
         else
-        res+=n-(x-y);
-        x=y;
+        l++;
     }
-    cout<<res<<endl;
+    if(u>l)
+    transform(s.begin(),s.end(),s.begin(),::toupper);
+    else
+    transform(s.begin(),s.end(),s.begin(),::tolower);
+    cout<<s<<endl;
 }
 signed main()
 {
