@@ -12,33 +12,30 @@
     cout.tie(0);
 #define vector vector<int>
 #define fv for (int i = 0; i < v.size(); i++)
-#define yes cout<<"YES"<<endl
-#define no cout<<"NO"<<endl
  
 using namespace std;
  
 void prg()
 {
-    int n,k;
-    cin>>n>>k;
-    string s;
-    cin>>s;
-    int l[k],r[k];
+    int n;
+    cin>>n;
+    string ar[n];
     fi0
-    cin>>l[i];
-    fi0
-    cin>>r[i];
-    int q;
-    cin>>q;
-    int x[q];
-    fi0
-    cin>>x[i]
+    cin>>ar[i];
+    int res=0;
+    for(string it:ar){
+        if(it=="X++"||it=="++X")
+        res++;
+        else
+        res--;
+    }
+    cout<<res<<endl;
 }
 signed main()
 {
     cp;
-    int t;
-    cin >> t;
+    int t=1;
+    //cin >> t;
     while (t--)
         prg();
     return 0;

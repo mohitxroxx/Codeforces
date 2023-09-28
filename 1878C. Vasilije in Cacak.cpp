@@ -20,15 +20,13 @@ void prg()
 {
     int n,k,x;
     cin>>n>>k>>x;
-    // vector<int> res;
-    // bool ans=false;
-    // for(int i=1;i<=n;i++)
-    // res.push_back(i);
-    int sum = (k * (2 * n - k + 1)) / 2;
+    int sum=0;
+    fi0
+    sum+=(i+1);
     if(sum==x)
     yes;
     else
-    no;
+    no
 }
 signed main()
 {

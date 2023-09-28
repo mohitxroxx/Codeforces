@@ -19,20 +19,17 @@ using namespace std;
  
 void prg()
 {
-    int n,k;
-    cin>>n>>k;
-    string s;
-    cin>>s;
-    int l[k],r[k];
+    int n,m;
+    cin>>n>>m;
+    int ar[n];
     fi0
-    cin>>l[i];
-    fi0
-    cin>>r[i];
-    int q;
-    cin>>q;
-    int x[q];
-    fi0
-    cin>>x[i]
+    cin>>ar[i];
+    int res=0,pos=1;
+    fi0{
+        res+=(pos-ar[i]+n)%n;
+        pos=ar[i];
+    }
+    cout<<pos<<endl;
 }
 signed main()
 {

@@ -19,26 +19,36 @@ using namespace std;
  
 void prg()
 {
-    int n,k;
-    cin>>n>>k;
-    string s;
-    cin>>s;
-    int l[k],r[k];
-    fi0
-    cin>>l[i];
-    fi0
-    cin>>r[i];
-    int q;
-    cin>>q;
-    int x[q];
-    fi0
-    cin>>x[i]
+   int n;
+   cin>>n;
+   bool ans=false;
+    for(int i=4;i<=n;i++){
+        if(n%i==0){
+            int temp=i;
+            int c=0;int x=0;
+            while(temp!=0){
+                int digit=temp%10;
+                if(digit==4 || digit==7)
+                c++;
+                temp/=10;
+                x++;
+            }
+            if(c==x){
+            ans=true;
+            break;
+            }
+        }
+    }
+    if(ans)
+    yes;
+    else
+    no;
 }
 signed main()
 {
     cp;
-    int t;
-    cin >> t;
+    int t=1;
+    //cin >> t;
     while (t--)
         prg();
     return 0;
