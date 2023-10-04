@@ -19,7 +19,7 @@ using namespace std;
  
 void prg()
 {
-nn
+n n[]
 }
 signed main()
 {
