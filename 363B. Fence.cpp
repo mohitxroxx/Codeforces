@@ -21,6 +21,8 @@
 
 using namespace std;
 
+//https://codeforces.com/problemset/problem/363/B
+
 void prg()
 {
     int n, k, sum = 0, ans = 1;
@@ -48,8 +50,8 @@ void prg()
 signed main()
 {
     cp;
-    int t;
-    cin >> t;
+    int t=1;
+    // cin >> t;
     while (t--)
         prg();
     return 0;
