@@ -15,26 +15,29 @@
 #define fv for (int i = 0; i < v.size(); i++)
 #define yes cout<<"YES"<<endl
 #define no cout<<"NO"<<endl
+#define inarr for(int i=0;i<n;i++) cin>>ar[i]
  
 using namespace std;
  
 void prg()
 {
-    int s,n;
-    cin>>s>>n;
-    string st;
-    cin>>st;
-    string b="B",g="G";
-    for(int i=1;i<=n;i++){
-        for(int j=0;j<s-1;j++){
-            if(st[j]=='B'&&st[j+1]=='G'){
-                st.replace(j,1,g);
-                st.replace(j+1,1,b);
-                j++;
-            }
+    int n;
+    cin>>n;
+    for(int i=n+1;;i++){
+        int x=i;
+        set<int> s;
+        while(x!=0){
+            int d=x%10;
+            s.insert(d);
+            x/=10;
+        }
+        if(s.size()==4)
+        {
+            cout<<i<<endl;
+            break;
         }
     }
-    cout<<st<<endl;
+    
 }
 signed main()
 {
