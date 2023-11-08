@@ -23,38 +23,39 @@ void prg()
 {
     int n,m;
     cin>>n>>m;
-    string s;
-    cin>>s;
-    string t;
-    cin>>t;
-    int a=0,b=0;
-    for(int i=0;i<m-1;i++)
-    if((t[i]=='0' && t[i+1]=='1') || t[i]=='1' && t[i+1]=='0'){
-        a++;
-    }
-    for(int i=0;i<n-1;i++)
-    if(s[i]==s[i+1]){
-        b++;
-    }
-    int o=0,z=0;
-    for(int i=0;i<n-1;i++){
-        if(s[i]==s[i+1]&&s[i]=='1')
-        o++;
-        if(s[i]==s[i+1]&&s[i]=='0')
-        z++;
-    }
-    if(b==0)
-    yes;
-    else if((a!=m-1)||(t[0]!=t[m-1]))
-    no;
-    else{
-        if(o>0&&z>0)
-        no;
-        else if((z>0&&t[0]=='0')||(o>0 && t[0]=='1'))
-        no;
-        else
-        yes;
-    }
+    // string s;
+    // cin>>s;
+    // string t;
+    // cin>>t;
+    // int a=0,b=0;
+    // for(int i=0;i<m-1;i++)
+    // if((t[i]=='0' && t[i+1]=='1') || t[i]=='1' && t[i+1]=='0'){
+    //     a++;
+    // }
+    // for(int i=0;i<n-1;i++)
+    // if(s[i]==s[i+1]){
+    //     b++;
+    // }
+    // int o=0,z=0;
+    // for(int i=0;i<n-1;i++){
+    //     if(s[i]==s[i+1]&&s[i]=='1')
+    //     o++;
+    //     if(s[i]==s[i+1]&&s[i]=='0')
+    //     z++;
+    // }
+    // if(b==0)
+    // yes;
+    // else if((a!=m-1)||(t[0]!=t[m-1]))
+    // no;
+    // else{
+    //     if(o>0&&z>0)
+    //     no;
+    //     else if((z>0&&t[0]=='0')||(o>0 && t[0]=='1'))
+    //     no;
+    //     else
+    //     yes;
+    // }
+    if(n<=>m)
 }
 signed main()
 {
