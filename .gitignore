@@ -1,4 +1,6 @@
 .vscode/
 .cph/
+output
+.vscode
 output/
 desktop.ini
