@@ -6,41 +6,51 @@
 #define fmp for(auto it:mp)
 #define int long long int
 #define nl << "\n"
-#define cp                        \
+#define MoHiT                        \
     ios_base::sync_with_stdio(0); \
     cin.tie(0);                   \
     cout.tie(0);
 #define umap unordered_map
 #define pb push_back
 #define fv for (int i = 0; i < v.size(); i++)
-#define yes cout<<"YES"<<endl
-#define no cout<<"NO"<<endl
+#define yes cout<<"Yes"<<endl
+#define no cout<<"No"<<endl
 #define inarr for(int i=0;i<n;i++) cin>>ar[i]
+#define popcount __builtin_popcount
+#define endl "\n"
  
 using namespace std;
- 
+
+int ncr(int n,int r){
+    if (r > n)
+        return 0;
+    if (r == 0 || r == n)
+        return 1;
+    return ncr(n - 1, r - 1) + ncr(n - 1, r);
+}
+
+bool isVowel(char s){
+    if(s=='A' || s=='E' || s=='I' || s=='O' || s=='U'||s=='a' || s=='e' || s=='i' || s=='o' || s=='u'  ){
+        return true;
+    }
+    return false;
+}
+
+
 void prg()
 {
-    int n;
-    cin>>n;
-    int a[3*n];
-    for(int i=0;i<(3*n);i++){
+    int a[5];
+    for(int i=0; i<4; i++)
         cin>>a[i];
-    }
-    int x=0,y=0,z=0;
-    for(int i=2;i<(3*n);i+=3){
-        x+=a[i-2];
-        y+=a[i-1];
-        z+=a[i];
-    }
-    if((x==0)&&(y==0)&&(z==0))
-    cout<<"YES"<<endl;
-    else
-    cout<<"NO"<<endl;
+    sort(a,a+4);
+    for(int i=0; i<3; i++)
+        cout<<a[3]-a[i]<<" ";
+    cout<<endl;
 }
 signed main()
 {
-    cp;
+    MoHiT;
+
     int t=1;
     // cin >> t;
     while (t--)

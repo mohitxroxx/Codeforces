@@ -1,7 +1,15 @@
 .vscode/
+<<<<<<< HEAD
 .cph/
 output
 .vscode
 output/
 desktop.ini
+<<<<<<< HEAD
 ./output
+=======
+=======
+output/
+desktop.ini
+>>>>>>> 5c368da41c941331e01c8d5a3a36fd2f1c0bb8e5
+>>>>>>> 717b6c021c602c027e326669f44102a42a75a5fd
